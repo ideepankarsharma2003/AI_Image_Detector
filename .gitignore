@@ -1,1 +1,4 @@
 ai_gen_images/
+human/
+*.zip
+temp/
