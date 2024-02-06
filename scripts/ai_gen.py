@@ -1,15 +1,17 @@
 import json
-
-urls= json.load(open("research/urls.json"))
+import os
+urls= json.load(open("outputs/image_playground_ai_imageurls.json"))
 from tqdm import tqdm
 import requests
 
 
 i=0
 
+os.makedirs("ai_gen_images", exist_ok=True)
+
 
 for url in tqdm(urls):
-    filename= f"ai_gen_images/image_{i}.png"
+    filename= f"ai_gen_images/pg_ai_image_{i}.JPEG"
     i+=1
     try:
         response= requests.get(url)

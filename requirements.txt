@@ -1,3 +1,9 @@
 # json
+kaggle
 tqdm
 requests
+datasets
+diffusers 
+transformers 
+accelerate
+bs4
