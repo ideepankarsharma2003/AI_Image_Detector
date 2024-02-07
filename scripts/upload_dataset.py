@@ -12,7 +12,7 @@ dataset= dataset.shuffle(seed=45)
 
 def push_dataset(dataset):
     try:
-        dataset.push_to_hub("ideepankarsharma2003/ImageClassificationStableDiffusion_small")
+        dataset.push_to_hub("ideepankarsharma2003/ImageClassificationStableDiffusion_small_v2")
     except:
         push_dataset(dataset)
 
